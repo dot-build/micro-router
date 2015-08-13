@@ -1,11 +1,11 @@
 {
+  "version": "0.0.0",
   "name": "urouter",
   "main": "index.js",
   "engines": {
     "node": "0.12.x"
   },
   "dependencies": {
-    "http-server": "^0.8.0",
     "node-es6-babel": "0.0.1"
   }
 }

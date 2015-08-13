@@ -1,2 +1,5 @@
 es5:
-	babel -m umd -d dist/ lib/
+	babel -m common -d dist/ lib/
+
+bower: es5
+	node make-browser.js
