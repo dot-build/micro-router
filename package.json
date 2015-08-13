@@ -1,7 +1,7 @@
 {
-  "version": "0.0.0",
-  "name": "urouter",
-  "main": "index.js",
+  "version": "0.1.0",
+  "name": "micro-router",
+  "main": "dist/Router.js",
   "engines": {
     "node": "0.12.x"
   },
