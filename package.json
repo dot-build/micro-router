@@ -5,7 +5,5 @@
   "engines": {
     "node": "0.12.x"
   },
-  "dependencies": {
-    "node-es6-babel": "0.0.1"
-  }
+  "dependencies": {}
 }
