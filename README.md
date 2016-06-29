@@ -9,13 +9,16 @@ import { Router } from 'urouter/Router';
 
 let router = new Router();
 
+// first define some rules
 router.when('patt3rn', patternHandler);
 router.when(/^foo|bar$/, foobarHandler);
 router.when(matcherFn, otherHandler);
 
-router.match('foo');		//	=> foobarHandler('foo')
-router.match('bar');		//	=> foobarHandler('bar')
-router.match('patt3rn');	//	=> patternHandler('patt3rn')
-router.match('whatever');	//	=> matcherFn('whatever') ? otherHandler('whatever')
+// later on, match values against the routes:
+
+router.match('foo');		//	=> calls foobarHandler('foo')
+router.match('bar');		//	=> calls foobarHandler('bar')
+router.match('patt3rn');	//	=> calls patternHandler('patt3rn')
+router.match('whatever');	//	=> calls matcherFn('whatever') ? otherHandler('whatever')
 
 ```
