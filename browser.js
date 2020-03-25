@@ -1,3 +1,4 @@
+(function () {var global = this, exports = {};
 /**
  * @class Router
  * @example
@@ -18,9 +19,10 @@ class Router {
 	}
 
 	match(value) {
+    const args = Array.prototype.slice.call(arguments);
 		var matched = this.patterns.some(function (o) {
 			if (o.pattern.match(value)) {
-				o.handler(value);
+				o.handler.apply(null, args);
 				return true;
 			}
 		});
@@ -89,4 +91,7 @@ class Pattern {
 
 Router.Pattern = Pattern;
 
-export { Router };
+exports.Router = Router;
+exports.Pattern = Pattern;
+
+global.Router = exports.Router})()

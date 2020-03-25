@@ -4,8 +4,8 @@ var end = 'global.Router = exports.Router})()';
 
 var parts = [
 	start,
-	fs.readFileSync('dist/Router.js', 'utf8'),
+	fs.readFileSync('main.js', 'utf8'),
 	end
 ];
 
-fs.writeFile('index.js', parts.join('\n'));
+fs.writeFileSync('browser.js', parts.join('\n'));

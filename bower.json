@@ -1,6 +1,6 @@
 {
   "name": "urouter",
-  "main": "index.js",
+  "main": "browser.js",
   "version": "0.1.0",
   "homepage": "https://github.com/darlanalves/urouter",
   "authors": [

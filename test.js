@@ -1,4 +1,4 @@
-import { Router } from './lib/Router';
+const { Router } = require('.');
 
 let router = new Router();
 
