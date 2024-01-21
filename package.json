@@ -4,6 +4,7 @@
   "main": "./index.mjs",
   "type": "module",
   "prettier": "@cloud-cli/prettier-config",
+  "typings": "./index.d.ts",
   "scripts": {
     "ci": "npm i && node --test",
     "test": "node --test",
