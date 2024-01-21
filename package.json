@@ -4,6 +4,11 @@
   "main": "./index.mjs",
   "type": "module",
   "prettier": "@cloud-cli/prettier-config",
+  "scripts": {
+    "ci": "npm i && node --test",
+    "test": "node --test",
+    "build": "echo true"
+  },
   "devDependencies": {
     "@cloud-cli/prettier-config": "^1.0.0"
   }
