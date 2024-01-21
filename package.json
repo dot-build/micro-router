@@ -1,8 +1,6 @@
 {
-  "version": "0.1.1",
+  "version": "0.0.0",
   "name": "micro-router",
-  "main": "main.js",
-  "scripts": {
-    "build": "node make-browser.js"
-  }
+  "main": "./index.mjs",
+  "type": "module"
 }

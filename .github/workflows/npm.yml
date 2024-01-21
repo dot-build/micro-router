@@ -1,0 +1,10 @@
+name: CICD
+on:
+  push:
+
+jobs:
+  release:
+    uses: cloud-cli/workflows/.github/workflows/npm-build-release.yml@main
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
